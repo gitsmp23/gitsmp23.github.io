@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://reactorclient.cc/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reactor Client">
+    <meta property="og:description" content="Reactor Fabric Utility Mod">
+    <meta property="og:image" content="/logo">
+    <link rel="manifest" href="/manifest">
+    <link rel="stylesheet" href="/style">
+    <link rel="icon" href="/logo">
+    <title>Racist SMP</title>
+    <style>
+        html, body {
+            color: white;
+            background-color: #111111;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: monospace;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title {
+            color: #FF5555;
+            font-size: 3em;
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .links a, .links button {
+            color: #fff;
+            text-decoration: none;
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 0 10px; 
+        }
+
+        .links a:hover, .links button:hover {
+            color: #FF5555;
+        }
+
+        #copy-success {
+            display: inline-block;
+            opacity: 0;
+            transition: opacity 0.5s;
+            margin-left: 10px; 
+        }
+    </style>
+    <script>
+        function copyIP(event) {
+            event.preventDefault(); 
+            const ipInput = document.createElement('input');
+            ipInput.value = 'play.racistsmp.xyz'; 
+            document.body.appendChild(ipInput);
+            ipInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(ipInput);
+    
+            const copySuccess = document.getElementById('copy-success');
+            copySuccess.style.opacity = '1';
+            setTimeout(() => {
+                copySuccess.style.opacity = '0';
+            }, 1500);
+        }
+    </script>
+</head>
+<body>
+    <div class="center">
+        <div class="title">Racist SMP</div>
+        <div class="content">The Best Server ™</div>
+        <div class="links">
+            <a href="https://discord.gg/MgHSMr5Kvr" target="_blank">[Discord]</a>
+            <a href="https://discord.gg/MgHSMr5Kvr">[Apply]</a>
+            <a href="#" onclick="copyIP(event)">[Copy IP]</a>
+      
+
+        </div>
+    </div>
+</body>
+</html>
